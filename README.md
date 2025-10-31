@@ -1,4 +1,4 @@
-![LeetCode Logo](https://upload.vectorlogo.zone/logos/leetcode/images/1f27e737-4847-49da-80b2-eb08dbd3467f.svg)
+<img src="https://upload.vectorlogo.zone/logos/leetcode/images/1f27e737-4847-49da-80b2-eb08dbd3467f.svg" alt="LeetCode Logo" width="300"/>
 
 # Colin's LeetCode
 
