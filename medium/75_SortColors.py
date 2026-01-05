@@ -5,10 +5,8 @@ Space: O(1)
 n = Length of array
 '''
 
-from typing import List
-
 class Solution:
-    def sortColors(self, nums: List[int]) -> None:
+    def sortColors(self, nums: List[int]) -> None:      # type: ignore
         """
         Do not return anything, modify nums in-place instead.
         """

@@ -5,10 +5,8 @@ Space: O(1)
 n = Length of array
 '''
 
-from typing import List
-
 class Solution:
-    def removeElement(self, nums: List[int], val: int) -> int:
+    def removeElement(self, nums: List[int], val: int) -> int:  # type: ignore
         res = 0
 
         for num in nums:

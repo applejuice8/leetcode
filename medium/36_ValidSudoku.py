@@ -5,10 +5,8 @@ Space: O(1)
 n = Length of array
 '''
 
-from typing import List
-
 class Solution:
-    def isValidSudoku(self, board: List[List[str]]) -> bool:
+    def isValidSudoku(self, board: List[List[str]]) -> bool:    # type: ignore
         size = len(board)
         cube = [set() for _ in range(size)]
 

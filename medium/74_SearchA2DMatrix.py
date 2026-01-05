@@ -6,10 +6,8 @@ m = Number of rows
 n = Number of cols
 '''
 
-from typing import List
-
 class Solution:
-    def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
+    def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:   # type: ignore
         h = len(matrix)
         w = len(matrix[0])
 

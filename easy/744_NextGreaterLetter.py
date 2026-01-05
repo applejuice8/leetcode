@@ -5,10 +5,8 @@ Space: O(1)
 n = Length of array
 '''
 
-from typing import List
-
 class Solution:
-    def nextGreatestLetter(self, letters: List[str], target: str) -> str:
+    def nextGreatestLetter(self, letters: List[str], target: str) -> str:   # type: ignore
         low = 0
         high = len(letters) - 1
         res = letters[0]

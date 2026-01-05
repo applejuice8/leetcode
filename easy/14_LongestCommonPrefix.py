@@ -6,10 +6,8 @@ n = Length of array
 m = Length of shortest str
 '''
 
-from typing import List
-
 class Solution:
-    def longestCommonPrefix(self, strs: List[str]) -> str:
+    def longestCommonPrefix(self, strs: List[str]) -> str:  # type: ignore
         res = ''
 
         # Length of shortest str

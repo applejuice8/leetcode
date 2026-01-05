@@ -6,10 +6,8 @@ n = Length of array
 d = Maximum number of digits
 '''
 
-from typing import List
-
 class Solution:
-    def findNumbers(self, nums: List[int]) -> int:
+    def findNumbers(self, nums: List[int]) -> int:      # type: ignore
         res = 0
 
         for num in nums:

@@ -5,10 +5,8 @@ Space: O(n^2)
 n = numRows
 '''
 
-from typing import List
-
 class Solution:
-    def long_method(self, numRows: int) -> List[List[int]]:
+    def long_method(self, numRows: int) -> List[List[int]]:     # type: ignore
         res = [[1]]
 
         for _ in range(1, numRows):

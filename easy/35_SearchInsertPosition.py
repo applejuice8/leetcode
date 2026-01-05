@@ -5,10 +5,8 @@ Space: O(1)
 n = Length of array
 '''
 
-from typing import List
-
 class Solution:
-    def searchInsert(self, nums: List[int], target: int) -> int:
+    def searchInsert(self, nums: List[int], target: int) -> int:    # type: ignore
         low = 0
         high = len(nums) - 1
 

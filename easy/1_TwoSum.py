@@ -5,10 +5,8 @@ Space: O(n)
 n = Length of array
 '''
 
-from typing import List
-
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:    # type: ignore
         # Hash table store previously seen nums
         seen = {}
 

@@ -5,10 +5,8 @@ Space: O(n)
 n = Length of array
 '''
 
-from typing import List
-
 class Solution:
-    def containsDuplicate(self, nums: List[int]) -> bool:
+    def containsDuplicate(self, nums: List[int]) -> bool:   # type: ignore
         seen = set()
         for num in nums:
             if num in seen:

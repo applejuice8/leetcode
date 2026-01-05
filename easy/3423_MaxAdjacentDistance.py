@@ -5,10 +5,8 @@ Space: O(1)
 n = Length of array
 '''
 
-from typing import List
-
 class Solution:
-    def maxAdjacentDistance(self, nums: List[int]) -> int:
+    def maxAdjacentDistance(self, nums: List[int]) -> int:      # type: ignore
         max_diff = 0
 
         # First iteration is 0, -1

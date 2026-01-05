@@ -5,10 +5,8 @@ Space: O(1)
 n = Length of bits
 '''
 
-from typing import List
-
 class Solution:
-    def isOneBitCharacter(self, bits: List[int]) -> bool:
+    def isOneBitCharacter(self, bits: List[int]) -> bool:   # type: ignore
         i = 0
         n = len(bits) - 1
 

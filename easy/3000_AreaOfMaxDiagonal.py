@@ -5,10 +5,8 @@ Space: O(1)
 n = Length of array
 '''
 
-from typing import List
-
 class Solution:
-    def areaOfMaxDiagonal(self, dimensions: List[List[int]]) -> int:
+    def areaOfMaxDiagonal(self, dimensions: List[List[int]]) -> int:    # type: ignore
         max_diag_sq = 0
         area = 0
 

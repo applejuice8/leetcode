@@ -7,10 +7,8 @@ m = Average length of each word
 k = Length of res
 '''
 
-from typing import List
-
 class Solution:
-    def findWordsContaining(self, words: List[str], x: str) -> List[int]:
+    def findWordsContaining(self, words: List[str], x: str) -> List[int]:   # type: ignore
         res = []
         for i, word in enumerate(words):
             if x in word:

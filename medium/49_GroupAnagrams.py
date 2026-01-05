@@ -14,11 +14,10 @@ Notes
 - Convert defaultdict to list before return
 '''
 
-from typing import List
 from collections import defaultdict
 
 class Solution:
-    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:    # type: ignore
         res = defaultdict(list)
         base = ord('a')
 

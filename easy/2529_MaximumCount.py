@@ -8,10 +8,8 @@ Space: O(1)
 n = Length of array
 '''
 
-from typing import List
-
 class Solution:
-    def count(self, nums: List[int]) -> int:
+    def count(self, nums: List[int]) -> int:    # type: ignore
         pos = 0
         neg = 0
         for num in nums:
