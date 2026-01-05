@@ -19,7 +19,7 @@ class Solution:
                 neg += 1
         return max(pos, neg)
 
-    def maximumCount(self, nums: List[int]) -> int:
+    def maximumCount(self, nums: List[int]) -> int:     # type: ignore
         n = len(nums)
 
         # Binary search

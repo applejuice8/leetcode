@@ -18,7 +18,7 @@ class Solution:
             res.append(item)
         return res
 
-    def generate(self, numRows: int) -> List[List[int]]:
+    def generate(self, numRows: int) -> List[List[int]]:    # type: ignore
         res = [[1]]
 
         for _ in range(1, numRows):
