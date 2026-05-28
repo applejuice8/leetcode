@@ -1,19 +1,23 @@
 '''
-Time: O(d)
-Space: O(d)
+=============== Complexity ===============
+Time:  O(n)
+Space: O(n)
 
-d = Number of digits
+n = Number of digits
+
+=============== Algorithm ===============
+1. Change first 6 to 9
 '''
 
-class Solution:
-    def maximum69Number (self, num: int) -> int:
-        s = list(str(num))
+def str_replace(num: int) -> int:
+    return int(str(num).replace('6', '9', 1))
 
-        # Change first 6 to 9
-        for i, digit in enumerate(s):
-            if digit == '6':
-                s[i] = '9'
-                return int(''.join(s))
-        
-        # It's already biggest
-        return num
+def list_replace(num: int) -> int:
+    s = list(str(num))
+
+    # Change first 6 to 9
+    for i, digit in enumerate(s):
+        if digit == '6':
+            s[i] = '9'
+            return int(''.join(s))
+    return num

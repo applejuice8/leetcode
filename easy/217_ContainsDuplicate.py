@@ -1,15 +1,18 @@
 '''
-Time: O(n)
+=============== Complexity ===============
+Time:  O(n)
 Space: O(n)
 
-n = Length of array
+n = Length of nums
+
+=============== Algorithm ===============
+1. Use set store seen elements
 '''
 
-class Solution:
-    def containsDuplicate(self, nums: List[int]) -> bool:   # type: ignore
-        seen = set()
-        for num in nums:
-            if num in seen:
-                return True
-            seen.add(num)
-        return False
+def use_set(nums: list[int]) -> bool:
+    seen = set()
+    for num in nums:
+        if num in seen:
+            return True
+        seen.add(num)
+    return False
