@@ -1,34 +1,36 @@
 '''
-Time: O(n^2)
+=============== Complexity ===============
+Time:  O(1)
 Space: O(1)
 
-n = Length of array
+=============== Algorithm ===============
+1. Initiate 9 empty sets (1 each for rows, cols, cubes)
+2. Iterate each cell, Skip empty cells
+3. If cell already in row / col / cube, return False
+4. Else, add cell to row / col / cube
 '''
 
-class Solution:
-    def isValidSudoku(self, board: List[List[str]]) -> bool:    # type: ignore
-        size = len(board)
-        cube = [set() for _ in range(size)]
+def empty_sets(board: list[list[str]]) -> bool:
+    SIZE = 9
+    rows = [set() for _ in range(SIZE)]
+    cols = [set() for _ in range(SIZE)]
+    cubes = [set() for _ in range(SIZE)]
 
-        for i in range(size):
-            row = set()
-            col = set()
+    for i in range(SIZE):
+        for j in range(SIZE):
+            val = board[i][j]
 
-            for j in range(size):
-                cube_index = (i // 3) * 3 + (j // 3)
+            # Skip empty cells
+            if val == '.':
+                continue
 
-                # Check row and cube
-                item = board[i][j]
-                if item != '.':
-                    if item in row or item in cube[cube_index]:
-                        return False
-                    row.add(item)
-                    cube[cube_index].add(item)
+            cube_index = (i // 3) * 3 + (j // 3)
 
-                # Check col
-                item = board[j][i]
-                if item != '.':
-                    if item in col:
-                        return False
-                    col.add(item)
-        return True
+            # If duplicate
+            if val in rows[i] or val in cols[j] or val in cubes[cube_index]:
+                return False
+
+            rows[i].add(val)
+            cols[j].add(val)
+            cubes[cube_index].add(val)
+    return True
